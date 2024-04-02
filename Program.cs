@@ -16,8 +16,38 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/hello", (string firstName) =>{
-    return "Hello " + firstName + "!";
+//adding
+app.MapGet("/add", (int num1, int num2) =>
+{
+    int sum = num1 + num2;
+    return $"The sum of {num1} and {num2} is {sum}.";
 });
 
+//name and time
+app.MapGet("/nameTime", (string name, string time) =>{
+    return $"So {name}, you woke up at {time}?";
+
+});
+
+//greater or less than
+app.MapGet("/greaterLess", (int num1, int num2) =>{
+    string comparison1, comparison2;
+
+    if (num1 > num2)
+        comparison1 = "greater than";
+    else if (num1 < num2)
+        comparison1 = "less than";
+    else
+        comparison1 = "equal to";
+
+    if (num2 > num1)
+        comparison2 = "greater than";
+    else if (num2 < num1)
+        comparison2 = "less than";
+    else
+        comparison2 = "equal to";
+
+    return $"{num1} is {comparison1} the {num2}.\n" +
+           $"{num2} is {comparison2} the {num1}.";
+});
 app.Run();

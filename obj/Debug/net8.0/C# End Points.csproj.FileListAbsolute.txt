@@ -31,3 +31,4 @@ C:\Users\silve\Documents\Academy Level 2\C#\C# End Points\obj\Debug\net8.0\refin
 C:\Users\silve\Documents\Academy Level 2\C#\C# End Points\obj\Debug\net8.0\C# End Points.pdb
 C:\Users\silve\Documents\Academy Level 2\C#\C# End Points\obj\Debug\net8.0\C# End Points.genruntimeconfig.cache
 C:\Users\silve\Documents\Academy Level 2\C#\C# End Points\obj\Debug\net8.0\ref\C# End Points.dll
+C:\Users\silve\Documents\Academy Level 2\C#\C# End Points\obj\Debug\net8.0\C# End Points.sourcelink.json
